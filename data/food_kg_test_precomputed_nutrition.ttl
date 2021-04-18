@@ -1,0 +1,13 @@
+@prefix ns1: <http://idea.rpi.edu/heals/kb/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<http://idea.rpi.edu/heals/kb/recipe/4849bd3f-Crunchy%2C%20Easy%2C%20Onion%20Garlic%20Potatoes> ns1:totalCalories "2352.108"^^xsd:float ;
+ns1:totalSodium "2789.204"^^xsd:float .
+<http://idea.rpi.edu/heals/kb/recipe/00a5cb5c86-Amish%20Chicken%20Corn%20Soup> ns1:totalCalories "2926.111034"^^xsd:float ;
+ns1:totalSodium "6512.711534"^^xsd:float .
+<http://idea.rpi.edu/heals/kb/recipe/001310c451-Lamb%20Chops%20au%20Gratin> ns1:totalCalories "1025.631432"^^xsd:float ;
+ ns1:totalSodium "1906.721568"^^xsd:float .
+<http://idea.rpi.edu/heals/kb/recipe/ea77d0d2-Layered%20Dinner> ns1:totalCalories "2975.058135"^^xsd:float ;
+ns1:totalSodium "3530.590108"^^xsd:float .
+<http://idea.rpi.edu/heals/kb/recipe/d4440bcd-Gratin%20Potatoes> ns1:totalCalories "504.66"^^xsd:float ;
+ ns1:totalSodium "508.32"^^xsd:float .

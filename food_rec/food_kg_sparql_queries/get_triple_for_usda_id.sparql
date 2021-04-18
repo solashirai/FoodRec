@@ -1,0 +1,9 @@
+prefix dbr: <http://dbpedia.org/resource/>
+prefix sio: <http://semanticscience.org/resource/>
+SELECT ?s ?p ?o
+WHERE {{
+    ?s sio:hasValue {id}.
+    ?s a dbr:Food.
+    ?s sio:hasValue ?o.
+    ?s ?p {id}.
+}}

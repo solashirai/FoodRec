@@ -1,0 +1,14 @@
+prefix recipe-kb: <http://idea.rpi.edu/heals/kb/>
+SELECT ?ing ?quant ?unit ?gram_quant
+WHERE {{
+    {ing_use_uri} recipe-kb:ing_name ?ing;
+        recipe-kb:ing_quantity ?quant;
+    bind("" as ?def_unit)
+    bind(0 as ?def_gram_quant)
+    optional {{
+    {ing_use_uri} recipe-kb:ing_unit ?has_unit;
+        recipe-kb:ing_computed_gram_quantity ?has_gram_quant.
+    }}
+    bind(coalesce(?has_unit, ?def_unit) as ?unit)
+    bind(coalesce(?has_gram_quant, ?def_gram_quant) as ?gram_quant)
+}}

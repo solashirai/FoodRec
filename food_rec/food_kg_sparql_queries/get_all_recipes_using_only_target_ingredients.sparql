@@ -1,0 +1,12 @@
+prefix recipe-kb: <http://idea.rpi.edu/heals/kb/>
+SELECT DISTINCT ?recipe
+WHERE {{
+    VALUES ?avail_ing {{ {space_separated_ings} }}
+    ?target_ing recipe-kb:ing_name ?avail_ing.
+    ?recipe recipe-kb:uses ?target_ing.
+    FILTER NOT EXISTS {{
+        ?recipe recipe-kb:uses ?other.
+        ?other recipe-kb:ing_name ?unavail_ing.
+        FILTER (?unavail_ing NOT IN ( {comma_separated_ings} ))
+    }}
+}}

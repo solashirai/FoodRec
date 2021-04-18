@@ -1,0 +1,7 @@
+{% extends 'construct_query.sparql.j2' %}
+{% block construct_triples %}
+    {% include 'constructor_recipe.sparql.j2' %}
+{% endblock %}
+{% block expressions %}
+    {% include 'all_recipes_not_using_ings.sparql.j2' %}
+{% endblock %}

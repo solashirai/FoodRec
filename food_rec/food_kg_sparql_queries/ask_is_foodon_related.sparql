@@ -1,0 +1,10 @@
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix obo: <http://purl.obolibrary.org/obo/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ASK
+WHERE {{
+    ?equiv_or_sub (owl:equivalentClass* | rdfs:subClassOf*)* {parent_uri}.
+    ?related_ings owl:someValuesFrom* ?equiv_or_sub.
+    {child_uri} (owl:equivalentClass* | rdfs:subClassOf* | owl:unionOf* | owl:intersectionOf* | owl:someValuesFrom* | obo:RO_0002350* | obo:RO_0001000* | obo:RO_0002225* | obo:FOODON_00002420* | rdf:first* | rdf:rest*)+ ?related_ings.
+}}

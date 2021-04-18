@@ -1,0 +1,8 @@
+prefix recipe-kb: <http://idea.rpi.edu/heals/kb/>
+SELECT DISTINCT ?recipe
+WHERE {{
+    ?ing_A recipe-kb:ing_name {ing_uri_A}.
+    ?ing_B recipe-kb:ing_name {ing_uri_B}.
+    ?recipe recipe-kb:uses ?ing_A;
+        recipe-kb:uses ?ing_B.
+}}

@@ -1,0 +1,11 @@
+?ingUseUri recipe-kb:ing_name ?ingUri ;
+    recipe-kb:ing_quantity ?ingUseQuant .
+{% with ingUri="?ingUri" %}
+    {% include 'ingredient.sparql.j2' %}
+{% endwith %}
+OPTIONAL {
+    ?ingUseUri recipe-kb:ing_unit ?ingUseUnit.
+}
+OPTIONAL {
+    ?ingUseUri recipe-kb:ing_computed_gram_quantity ?ingUseGramQuant.
+}

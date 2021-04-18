@@ -1,0 +1,13 @@
+prefix food-kg-user: <http://idea.rpi.edu/heals/kb/user/>
+prefix food-kg-user-id: <http://idea.rpi.edu/heals/kb/user/user_id/>
+prefix diet-restriction: <http://idea.rpi.edu/heals/diet_restriction/>
+
+SELECT ?name ?fav ?prohibited ?prohibited_foodon ?available
+WHERE {{
+    {user_uri} food-kg-user:user_name ?name;
+        food-kg-user:favorite_recipe ?fav;
+        food-kg-user:prohibited_ingredient ?prohibited;
+        food-kg-user:available_ingredient ?available.
+    OPTIONAL {{ {user_uri} food-kg-user:user_dietary_restriction ?restrict.
+     ?restrict diet-restriction:restricted_foodon_class ?prohibited_foodon. }}
+}}

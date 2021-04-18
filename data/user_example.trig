@@ -1,0 +1,50 @@
+@prefix recipe-kb: <http://idea.rpi.edu/heals/kb/> .
+@prefix recipe: <http://idea.rpi.edu/heals/kb/recipe/> .
+@prefix ing: <http://idea.rpi.edu/heals/kb/ingredientname/> .
+@prefix food-kg-user: <http://idea.rpi.edu/heals/kb/user/> .
+@prefix food-kg-user-id: <http://idea.rpi.edu/heals/kb/user/user_id/> .
+@prefix diet-restriction: <http://idea.rpi.edu/heals/diet_restriction/> .
+@prefix ing: <http://idea.rpi.edu/heals/kb/ingredientname/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+food-kg-user-id:USER_001 a food-kg-user:user;
+    food-kg-user:user_name "Testuser" ;
+    food-kg-user:user_sex "male" ;
+    food-kg-user:favorite_recipe recipe:001310c451-Lamb%20Chops%20au%20Gratin ; #00f4634369-Spinach%20Phyllo%20Casserole; #
+    food-kg-user:prohibited_ingredient ing:milk;
+    food-kg-user:user_dietary_restriction diet-restriction:dairy_allergy, # dairy food product
+        diet-restriction:reduce_carbs;
+    food-kg-user:available_ingredient ing:garlic%20clove ,
+        ing:ground%20nutmeg ,
+        ing:heavy%20cream ,
+        ing:parmesan%20cheese ,
+        ing:potato ,
+        ing:salt%20and%20pepper ,
+        ing:Worcestershire%20sauce ,
+        ing:carrot ,
+        ing:frozen%20peas ,
+        ing:ground%20beef ,
+        ing:onion ,
+        ing:salt%20and%20pepper ,
+        ing:tomato%20soup ,
+        ing:unsalted%20butter ,
+        ing:water .
+
+food-kg-user-id:USER_002 a food-kg-user:user;
+    food-kg-user:user_name "Testuser 2" ;
+    food-kg-user:user_sex "male" ;
+    food-kg-user:user_age 40 ;
+    food-kg-user:favorite_recipe recipe:001310c451-Lamb%20Chops%20au%20Gratin ;
+    food-kg-user:user_bmi "30.0"^^xsd:float .
+
+food-kg-user-id:USER_003 a food-kg-user:user;
+    food-kg-user:user_name "Testuser 3" ;
+    food-kg-user:user_sex "male" ;
+    food-kg-user:user_age 30 ;
+    food-kg-user:user_bmi "25.0"^^xsd:float ;
+    food-kg-user:prohibited_ingredient ing:butter ,
+        ing:milk ;
+    food-kg-user:favorite_recipe recipe:0014f77398-Open-Face%20Portabella%20Sandwiches ,
+        recipe:000ee3c428-Ham%20and%20Egg%20Salad ;
+    food-kg-user:target_lifestyle_guideline <http://idea.rpi.edu/heals/kb/placeholder/fakeuri3> .

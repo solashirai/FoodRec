@@ -1,0 +1,7 @@
+prefix recipe-kb: <http://idea.rpi.edu/heals/kb/>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?l
+WHERE {{
+    {recipe_uri} a recipe-kb:recipe ;
+          rdfs:label ?l .
+}}

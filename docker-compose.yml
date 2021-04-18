@@ -1,0 +1,16 @@
+version: "3.5"
+networks:
+  foodkg:
+    name: foodkg
+services:
+  foodkg-semantic-substitutions:
+    build:
+      context: .
+    container_name: foodkg-semantic-substitutions
+    image: foodkg-semantic-substitutions
+    networks:
+      - foodkg
+    ports:
+      - "127.0.0.1:8080:80"
+    volumes:
+      - ./data:/app/data:ro

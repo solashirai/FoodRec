@@ -1,0 +1,10 @@
+{% extends 'construct_query.sparql.j2' %}
+{% block construct_triples %}
+    {% include 'constructor_usda_nutrition.sparql.j2' %}
+{% endblock %}
+{% block values %}
+    {% include 'value_constraint.sparql.j2' %}
+{% endblock %}
+{% block expressions %}
+    {% include 'usda_nutrition.sparql.j2' %}
+{% endblock %}

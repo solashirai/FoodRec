@@ -1,0 +1,7 @@
+?fromIngUri food-kg-sub:hasSubstitute ?toIngUri .
+
+{% include 'constructor_recipe.sparql.j2' %}
+
+{% with ingUri="?toIngUri" %}
+    {% include 'constructor_ingredient.sparql.j2' %}
+{% endwith %}

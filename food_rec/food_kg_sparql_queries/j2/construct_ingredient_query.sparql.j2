@@ -1,0 +1,14 @@
+{% extends 'construct_query.sparql.j2' %}
+{% block construct_triples %}
+    {% with ingUri="?ingUri" %}
+        {% include 'constructor_ingredient.sparql.j2' %}
+    {% endwith %}
+{% endblock %}
+{% block values %}
+    {% include 'value_constraint.sparql.j2' %}
+{% endblock %}
+{% block expressions %}
+    {% with ingUri="?ingUri" %}
+        {% include 'ingredient.sparql.j2' %}
+    {% endwith %}
+{% endblock %}

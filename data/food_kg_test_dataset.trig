@@ -1,0 +1,912 @@
+@prefix ns1: <http://www.w3.org/2002/07/owl#> .
+@prefix ns2: <http://idea.rpi.edu/heals/kb/> .
+@prefix ns3: <http://www.geneontology.org/formats/oboInOwl#> .
+@prefix ns4: <http://purl.obolibrary.org/obo/> .
+@prefix ns5: <http://schema.org/> .
+@prefix ns6: <file:///C:/Users/Sola/PycharmProjects/ingredient_substitution/data/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/butternut%20squash> a ns2:ingredientname ;
+        rdfs:label "butternut squash" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#11485> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03303946 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#11485>,
+            ns4:FOODON_03303946 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/cauliflower> a ns2:ingredientname ;
+        rdfs:label "cauliflower" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#11135> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03311755 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#11135>,
+            ns4:FOODON_03311755 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/olive%20oil> a ns2:ingredientname ;
+        rdfs:label "olive oil" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#04053> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03301826 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#04053>,
+            ns4:FOODON_03301826 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/prune%20puree> a ns2:ingredientname ;
+        rdfs:label "prune puree" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#09423> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03301290 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#09423>,
+            ns4:FOODON_03301290 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/shortening> a ns2:ingredientname ;
+        rdfs:label "shortening" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#04556> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03315165 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#04556>,
+            ns4:FOODON_03315165 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/turnip> a ns2:ingredientname ;
+        rdfs:label "turnips" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#11564> ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#11564> .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/unsalted%20butter> a ns2:ingredientname ;
+        rdfs:label "unsalted butter" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#01001> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03310351 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#01001>,
+            ns4:FOODON_03310351 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/unsweetened%20applesauce> a ns2:ingredientname ;
+        rdfs:label "unsweetened applesauce" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#09019> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03301126 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#09019>,
+            ns4:FOODON_03301126 .
+
+    <http://idea.rpi.edu/heals/kb/recipe/001310c451-Lamb%20Chops%20au%20Gratin> a ns2:recipe ;
+        rdfs:label "Lamb Chops au Gratin" ;
+        ns2:recipe1MId "001310c451" ;
+        ns2:uses <http://idea.rpi.edu/heals/kb/recipe/001310c451-Lamb%20Chops%20au%20Gratin/ingredient/beer>,
+            <http://idea.rpi.edu/heals/kb/recipe/001310c451-Lamb%20Chops%20au%20Gratin/ingredient/butter>,
+            <http://idea.rpi.edu/heals/kb/recipe/001310c451-Lamb%20Chops%20au%20Gratin/ingredient/double%20cream>,
+            <http://idea.rpi.edu/heals/kb/recipe/001310c451-Lamb%20Chops%20au%20Gratin/ingredient/dried%20herbs>,
+            <http://idea.rpi.edu/heals/kb/recipe/001310c451-Lamb%20Chops%20au%20Gratin/ingredient/lamb%20loin%20chops>,
+            <http://idea.rpi.edu/heals/kb/recipe/001310c451-Lamb%20Chops%20au%20Gratin/ingredient/onion>,
+            <http://idea.rpi.edu/heals/kb/recipe/001310c451-Lamb%20Chops%20au%20Gratin/ingredient/sharp%20cheddar%20cheese> .
+
+    <http://idea.rpi.edu/heals/kb/recipe/4849bd3f-Crunchy%2C%20Easy%2C%20Onion%20Garlic%20Potatoes> a ns2:recipe ;
+        rdfs:label "Crunchy, Easy, Onion Garlic Potatoes" ;
+        ns2:recipe1MId "01aab051a9" ;
+        ns2:uses <http://idea.rpi.edu/heals/kb/recipe/4849bd3f-Crunchy%2C%20Easy%2C%20Onion%20Garlic%20Potatoes/ingredient/French%20-%20fried%20onions>,
+            <http://idea.rpi.edu/heals/kb/recipe/4849bd3f-Crunchy%2C%20Easy%2C%20Onion%20Garlic%20Potatoes/ingredient/butter>,
+            <http://idea.rpi.edu/heals/kb/recipe/4849bd3f-Crunchy%2C%20Easy%2C%20Onion%20Garlic%20Potatoes/ingredient/dried%20garlic>,
+            <http://idea.rpi.edu/heals/kb/recipe/4849bd3f-Crunchy%2C%20Easy%2C%20Onion%20Garlic%20Potatoes/ingredient/milk>,
+            <http://idea.rpi.edu/heals/kb/recipe/4849bd3f-Crunchy%2C%20Easy%2C%20Onion%20Garlic%20Potatoes/ingredient/potatoes> .
+
+    <http://idea.rpi.edu/heals/kb/recipe/d4440bcd-Gratin%20Potatoes> a ns2:recipe ;
+        rdfs:label "Gratin Potatoes" ;
+        ns2:recipe1MId "01a6d349a5" ;
+        ns2:uses <http://idea.rpi.edu/heals/kb/recipe/d4440bcd-Gratin%20Potatoes/ingredient/garlic%20clove>,
+            <http://idea.rpi.edu/heals/kb/recipe/d4440bcd-Gratin%20Potatoes/ingredient/ground%20nutmeg>,
+            <http://idea.rpi.edu/heals/kb/recipe/d4440bcd-Gratin%20Potatoes/ingredient/heavy%20cream>,
+            <http://idea.rpi.edu/heals/kb/recipe/d4440bcd-Gratin%20Potatoes/ingredient/parmesan%20cheese>,
+            <http://idea.rpi.edu/heals/kb/recipe/d4440bcd-Gratin%20Potatoes/ingredient/potatoes>,
+            <http://idea.rpi.edu/heals/kb/recipe/d4440bcd-Gratin%20Potatoes/ingredient/salt%20and%20pepper> .
+
+    <http://idea.rpi.edu/heals/kb/recipe/ea77d0d2-Layered%20Dinner> a ns2:recipe ;
+        rdfs:label "Layered Dinner" ;
+        ns2:recipe1MId "01b574ebb8";
+        ns2:uses <http://idea.rpi.edu/heals/kb/recipe/ea77d0d2-Layered%20Dinner/ingredient/Worcestershire%20sauce>,
+            <http://idea.rpi.edu/heals/kb/recipe/ea77d0d2-Layered%20Dinner/ingredient/carrots>,
+            <http://idea.rpi.edu/heals/kb/recipe/ea77d0d2-Layered%20Dinner/ingredient/frozen%20peas>,
+            <http://idea.rpi.edu/heals/kb/recipe/ea77d0d2-Layered%20Dinner/ingredient/ground%20beef>,
+            <http://idea.rpi.edu/heals/kb/recipe/ea77d0d2-Layered%20Dinner/ingredient/onion>,
+            <http://idea.rpi.edu/heals/kb/recipe/ea77d0d2-Layered%20Dinner/ingredient/potatoes>,
+            <http://idea.rpi.edu/heals/kb/recipe/ea77d0d2-Layered%20Dinner/ingredient/salt%20and%20pepper>,
+            <http://idea.rpi.edu/heals/kb/recipe/ea77d0d2-Layered%20Dinner/ingredient/tomato%20soup>,
+            <http://idea.rpi.edu/heals/kb/recipe/ea77d0d2-Layered%20Dinner/ingredient/water> .
+
+    <http://idea.rpi.edu/heals/kb/recipe/00a5cb5c86-Amish%20Chicken%20Corn%20Soup> a ns2:recipe ;
+        rdfs:label "Amish Chicken Corn Soup" ;
+        ns2:recipe1MId "00a5cb5c86" ;
+        ns2:uses <http://idea.rpi.edu/heals/kb/recipe/00a5cb5c86-Amish%20Chicken%20Corn%20Soup/ingredient/boneless%20skinless%20chicken%20breasts>,
+            <http://idea.rpi.edu/heals/kb/recipe/00a5cb5c86-Amish%20Chicken%20Corn%20Soup/ingredient/butter>,
+            <http://idea.rpi.edu/heals/kb/recipe/00a5cb5c86-Amish%20Chicken%20Corn%20Soup/ingredient/carrots>,
+            <http://idea.rpi.edu/heals/kb/recipe/00a5cb5c86-Amish%20Chicken%20Corn%20Soup/ingredient/celery>,
+            <http://idea.rpi.edu/heals/kb/recipe/00a5cb5c86-Amish%20Chicken%20Corn%20Soup/ingredient/chicken%20bouillon%20cubes>,
+            <http://idea.rpi.edu/heals/kb/recipe/00a5cb5c86-Amish%20Chicken%20Corn%20Soup/ingredient/cream%20-%20style%20corn>,
+            <http://idea.rpi.edu/heals/kb/recipe/00a5cb5c86-Amish%20Chicken%20Corn%20Soup/ingredient/egg%20noodles>,
+            <http://idea.rpi.edu/heals/kb/recipe/00a5cb5c86-Amish%20Chicken%20Corn%20Soup/ingredient/onions>,
+            <http://idea.rpi.edu/heals/kb/recipe/00a5cb5c86-Amish%20Chicken%20Corn%20Soup/ingredient/pepper>,
+            <http://idea.rpi.edu/heals/kb/recipe/00a5cb5c86-Amish%20Chicken%20Corn%20Soup/ingredient/salt>,
+            <http://idea.rpi.edu/heals/kb/recipe/00a5cb5c86-Amish%20Chicken%20Corn%20Soup/ingredient/water> .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/French%20-%20fried%20onions> a ns2:ingredientname ;
+        rdfs:label "French - fried onions" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#11394> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_00002849 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#11394>,
+            ns4:FOODON_00002849 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/Worcestershire%20sauce> a ns2:ingredientname ;
+        rdfs:label "Worcestershire sauce" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#06971> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03305003 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#06971>,
+            ns4:FOODON_03305003 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/beer> a ns2:ingredientname ;
+        rdfs:label "beer" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#07003> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03301619 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#07003>,
+            ns4:FOODON_03301619 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/boneless%20skinless%20chicken%20breasts> a ns2:ingredientname ;
+        rdfs:label "boneless skinless chicken breasts" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#13965> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03411457 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#13965>,
+            ns4:FOODON_03411457 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/celery> a ns2:ingredientname ;
+        rdfs:label "celery" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#11143> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03311578 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#11143>,
+            ns4:FOODON_03311578 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/chicken%20bouillon%20cubes> a ns2:ingredientname ;
+        rdfs:label "chicken bouillon cubes" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#06081> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03304208 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#06081>,
+            ns4:FOODON_03304208 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/cream%20-%20style%20corn> a ns2:ingredientname ;
+        rdfs:label "cream - style corn" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#01017> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03304260 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#01017>,
+            ns4:FOODON_03304260 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/double%20cream> a ns2:ingredientname ;
+        rdfs:label "double cream" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#01017> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03304260 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#01017>,
+            ns4:FOODON_03304260 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/dried%20garlic> a ns2:ingredientname ;
+        rdfs:label "dried garlic" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#02066> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03316399 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#02066>,
+            ns4:FOODON_03316399 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/dried%20herbs> a ns2:ingredientname ;
+        rdfs:label "dried herbs" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#02066> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03316424 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#02066>,
+            ns4:FOODON_03316424 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/egg%20noodles> a ns2:ingredientname ;
+        rdfs:label "egg noodles" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#20109> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03304501 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#20109>,
+            ns4:FOODON_03304501 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/frozen%20peas> a ns2:ingredientname ;
+        rdfs:label "frozen peas" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#11302> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03311501 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#11302>,
+            ns4:FOODON_03311501 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/garlic%20clove> a ns2:ingredientname ;
+        rdfs:label "garlic clove" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#09427> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03316399 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#09427>,
+            ns4:FOODON_03316399 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/ground%20beef> a ns2:ingredientname ;
+        rdfs:label "ground beef" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#13047> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03317337 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#13047>,
+            ns4:FOODON_03317337 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/ground%20nutmeg> a ns2:ingredientname ;
+        rdfs:label "ground nutmeg" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#02025> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03311168 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#02025>,
+            ns4:FOODON_03311168 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/heavy%20cream> a ns2:ingredientname ;
+        rdfs:label "heavy cream" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#01053> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03310795 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#01053>,
+            ns4:FOODON_03310795 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/lamb%20loin%20chops> a ns2:ingredientname ;
+        rdfs:label "lamb loin chops" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#17026> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03411669 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#17026>,
+            ns4:FOODON_03411669 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/milk> a ns2:ingredientname ;
+        rdfs:label "milk" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#01059> ;
+        ns2:equivalentFoodOnClass ns4:UBERON_0001913 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#01059>,
+            ns4:UBERON_0001913 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/onions> a ns2:ingredientname ;
+        rdfs:label "onions" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#11282> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03316176 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#11282>,
+            ns4:FOODON_03316176 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/parmesan%20cheese> a ns2:ingredientname ;
+        rdfs:label "parmesan cheese" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#01032> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03302978 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#01032>,
+            ns4:FOODON_03302978 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/pepper> a ns2:ingredientname ;
+        rdfs:label "pepper" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#02030> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03301147 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#02030>,
+            ns4:FOODON_03301147 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/salt> a ns2:ingredientname ;
+        rdfs:label "salt" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#02047> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03304756 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#02047>,
+            ns4:FOODON_03304756 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/sharp%20cheddar%20cheese> a ns2:ingredientname ;
+        rdfs:label "sharp cheddar cheese" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#01270> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03302458 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#01270>,
+            ns4:FOODON_03302458 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/tomato%20soup> a ns2:ingredientname ;
+        rdfs:label "tomato soup" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#06159> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03304909 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#06159>,
+            ns4:FOODON_03304909 .
+
+    <http://idea.rpi.edu/heals/kb/recipe/001310c451-Lamb%20Chops%20au%20Gratin/ingredient/beer> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "92.0"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/beer> ;
+        ns2:ing_quantity "4" ;
+        ns2:ing_unit "tablespoons" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/001310c451-Lamb%20Chops%20au%20Gratin/ingredient/butter> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "14.2"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/butter> ;
+        ns2:ing_quantity "1/2" ;
+        ns2:ing_unit "ounce" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/001310c451-Lamb%20Chops%20au%20Gratin/ingredient/double%20cream> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "42.0"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/double%20cream> ;
+        ns2:ing_quantity "3" ;
+        ns2:ing_unit "" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/001310c451-Lamb%20Chops%20au%20Gratin/ingredient/dried%20herbs> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "0.13243243243243244"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/dried%20herbs> ;
+        ns2:ing_quantity "1/4" ;
+        ns2:ing_unit "teaspoon" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/001310c451-Lamb%20Chops%20au%20Gratin/ingredient/lamb%20loin%20chops> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "224.0"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/lamb%20loin%20chops> ;
+        ns2:ing_quantity "8" ;
+        ns2:ing_unit "" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/001310c451-Lamb%20Chops%20au%20Gratin/ingredient/onion> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "2.0"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/onion> ;
+        ns2:ing_quantity "1" ;
+        ns2:ing_unit "" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/001310c451-Lamb%20Chops%20au%20Gratin/ingredient/sharp%20cheddar%20cheese> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "57.0"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/sharp%20cheddar%20cheese> ;
+        ns2:ing_quantity "2" ;
+        ns2:ing_unit "ounces" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/4849bd3f-Crunchy%2C%20Easy%2C%20Onion%20Garlic%20Potatoes/ingredient/French%20-%20fried%20onions> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "12.0"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/French%20-%20fried%20onions> ;
+        ns2:ing_quantity "4" ;
+        ns2:ing_unit "tablespoons" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/4849bd3f-Crunchy%2C%20Easy%2C%20Onion%20Garlic%20Potatoes/ingredient/butter> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "28.4"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/butter> ;
+        ns2:ing_quantity "2" ;
+        ns2:ing_unit "tablespoons" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/4849bd3f-Crunchy%2C%20Easy%2C%20Onion%20Garlic%20Potatoes/ingredient/dried%20garlic> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "4.800000000000001"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/dried%20garlic> ;
+        ns2:ing_quantity "3" ;
+        ns2:ing_unit "tablespoons" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/4849bd3f-Crunchy%2C%20Easy%2C%20Onion%20Garlic%20Potatoes/ingredient/milk> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "732.0"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/milk> ;
+        ns2:ing_quantity "3 -5" ;
+        ns2:ing_unit "" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/4849bd3f-Crunchy%2C%20Easy%2C%20Onion%20Garlic%20Potatoes/ingredient/potatoes> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "624.0"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/potato> ;
+        ns2:ing_quantity "4" ;
+        ns2:ing_unit "medium" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/d4440bcd-Gratin%20Potatoes/ingredient/garlic%20clove> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "114.0"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/garlic%20clove> ;
+        ns2:ing_quantity "1" ;
+        ns2:ing_unit "clove" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/d4440bcd-Gratin%20Potatoes/ingredient/ground%20nutmeg> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "2.0"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/ground%20nutmeg> ;
+        ns2:ing_quantity "1" ;
+        ns2:ing_unit "teaspoon" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/d4440bcd-Gratin%20Potatoes/ingredient/heavy%20cream> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "89.99999999999999"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/heavy%20cream> ;
+        ns2:ing_quantity "3/4" ;
+        ns2:ing_unit "cups" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/d4440bcd-Gratin%20Potatoes/ingredient/parmesan%20cheese> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "25.0"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/parmesan%20cheese> ;
+        ns2:ing_quantity "1/4" ;
+        ns2:ing_unit "cups" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/d4440bcd-Gratin%20Potatoes/ingredient/potatoes> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "0.0"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/potato> ;
+        ns2:ing_quantity "" ;
+        ns2:ing_unit "" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/d4440bcd-Gratin%20Potatoes/ingredient/salt%20and%20pepper> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "0.0"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/salt%20and%20pepper> ;
+        ns2:ing_quantity "" ;
+        ns2:ing_unit "" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/ea77d0d2-Layered%20Dinner/ingredient/Worcestershire%20sauce> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "5.628378378378379"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/Worcestershire%20sauce> ;
+        ns2:ing_quantity "1" ;
+        ns2:ing_unit "teaspoon" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/ea77d0d2-Layered%20Dinner/ingredient/carrots> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "384.0"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/carrot> ;
+        ns2:ing_quantity "3" ;
+        ns2:ing_unit "" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/ea77d0d2-Layered%20Dinner/ingredient/frozen%20peas> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "144.0"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/frozen%20peas> ;
+        ns2:ing_quantity "1" ;
+        ns2:ing_unit "cup" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/ea77d0d2-Layered%20Dinner/ingredient/ground%20beef> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "680.4000000000001"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/ground%20beef> ;
+        ns2:ing_quantity "1 1/2" ;
+        ns2:ing_unit "lbs" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/ea77d0d2-Layered%20Dinner/ingredient/onion> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "2.0"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/onion> ;
+        ns2:ing_quantity "1" ;
+        ns2:ing_unit "" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/ea77d0d2-Layered%20Dinner/ingredient/potatoes> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "468.0"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/potato> ;
+        ns2:ing_quantity "3" ;
+        ns2:ing_unit "" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/ea77d0d2-Layered%20Dinner/ingredient/salt%20and%20pepper> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "0.0"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/salt%20and%20pepper> ;
+        ns2:ing_quantity "" ;
+        ns2:ing_unit "" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/ea77d0d2-Layered%20Dinner/ingredient/tomato%20soup> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "294.0"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/tomato%20soup> ;
+        ns2:ing_quantity "1" ;
+        ns2:ing_unit "can" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/ea77d0d2-Layered%20Dinner/ingredient/water> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "28.0"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/water> ;
+        ns2:ing_quantity "1/2" ;
+        ns2:ing_unit "cup" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/00a5cb5c86-Amish%20Chicken%20Corn%20Soup/ingredient/boneless%20skinless%20chicken%20breasts> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "907.2"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/boneless%20skinless%20chicken%20breasts> ;
+        ns2:ing_quantity "2" ;
+        ns2:ing_unit "lbs" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/00a5cb5c86-Amish%20Chicken%20Corn%20Soup/ingredient/butter> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "56.75202702702702"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/butter> ;
+        ns2:ing_quantity "1/4" ;
+        ns2:ing_unit "cup" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/00a5cb5c86-Amish%20Chicken%20Corn%20Soup/ingredient/carrots> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "128.0"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/carrot> ;
+        ns2:ing_quantity "1" ;
+        ns2:ing_unit "cup" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/00a5cb5c86-Amish%20Chicken%20Corn%20Soup/ingredient/celery> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "101.0"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/celery> ;
+        ns2:ing_quantity "1" ;
+        ns2:ing_unit "cup" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/00a5cb5c86-Amish%20Chicken%20Corn%20Soup/ingredient/chicken%20bouillon%20cubes> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "12.0"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/chicken%20bouillon%20cubes> ;
+        ns2:ing_quantity "3" ;
+        ns2:ing_unit "" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/00a5cb5c86-Amish%20Chicken%20Corn%20Soup/ingredient/cream%20-%20style%20corn> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "28.0"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/cream%20-%20style%20corn> ;
+        ns2:ing_quantity "2" ;
+        ns2:ing_unit "cans" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/00a5cb5c86-Amish%20Chicken%20Corn%20Soup/ingredient/egg%20noodles> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "76.0"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/egg%20noodles> ;
+        ns2:ing_quantity "2" ;
+        ns2:ing_unit "cups" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/00a5cb5c86-Amish%20Chicken%20Corn%20Soup/ingredient/onions> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "160.0"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/onions> ;
+        ns2:ing_quantity "1" ;
+        ns2:ing_unit "cup" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/00a5cb5c86-Amish%20Chicken%20Corn%20Soup/ingredient/pepper> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "0.5"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/pepper> ;
+        ns2:ing_quantity "1/4" ;
+        ns2:ing_unit "teaspoon" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/00a5cb5c86-Amish%20Chicken%20Corn%20Soup/ingredient/salt> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "5.999999999999999"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/salt> ;
+        ns2:ing_quantity "1" ;
+        ns2:ing_unit "teaspoon" .
+
+    <http://idea.rpi.edu/heals/kb/recipe/00a5cb5c86-Amish%20Chicken%20Corn%20Soup/ingredient/water> a ns2:ingredientuse ;
+        ns2:ing_comment "" ;
+        ns2:ing_computed_gram_quantity "28.0"^^xsd:float ;
+        ns2:ing_name <http://idea.rpi.edu/heals/kb/ingredientname/water> ;
+        ns2:ing_quantity "1/2" ;
+        ns2:ing_unit "cups" .
+
+    ns4:FOODON_00001002 ns3:hasSynonym "food product"@en .
+
+    ns4:FOODON_00001745 a ns1:Class ;
+        rdfs:label "clove food product"@en .
+
+    ns4:FOODON_00001750 a ns1:Class ;
+        rdfs:label "cod food product"@en .
+
+    ns4:FOODON_00001772 a ns1:Class ;
+        rdfs:label "cow milk butter food product"@en .
+
+    ns4:FOODON_00001778 a ns1:Class ;
+        rdfs:label "cow milk hard cheese food product"@en .
+
+    ns4:FOODON_00001946 a ns1:Class ;
+        rdfs:label "hard grating cheese food product"@en .
+
+    ns4:FOODON_00002017 a ns1:Class ;
+        rdfs:label "barley malt beverage"@en .
+
+    ns4:FOODON_00002403 a ns1:Class ;
+        rdfs:label "food material"@en ;
+        ns3:hasSynonym "food"@en .
+
+    ns4:FOODON_00002420 a ns1:ObjectProperty ;
+        rdfs:label "has ingredient"@en ;
+        rdfs:domain ns4:FOODON_00002403 ;
+        rdfs:range ns4:FOODON_00001002 ;
+        rdfs:subPropertyOf ns4:RO_0009001 .
+
+    ns4:FOODON_00002849 a ns1:Class .
+
+    ns4:FOODON_03301619 a ns1:Class ;
+        rdfs:label "beer"@en ;
+        ns4:IAO_0000114 ns4:IAO_0000428 ;
+        ns4:IAO_0000412 "http://langual.org" ;
+        ns3:hasDbXref "SUBSET_SIREN:F1619" ;
+        ns3:inSubset "subset_siren" ;
+        rdfs:comment """SIREN DB annotation:\r\r
+* has quality 'liquid, low viscosity, with no visible particles' (http://purl.obolibrary.org/obo/FOODON_03430123)\r\r
+* derives from 'germinated or sprouted seed' (http://purl.obolibrary.org/obo/FOODON_03420102)\r\r
+* formed as a result of 'flavoring, spice or herb added, natural' (http://purl.obolibrary.org/obo/FOODON_03460229)\r\r
+* formed as a result of 'alcohol fermentation process' (http://purl.obolibrary.org/obo/FOODON_03460232)\r\r
+* formed as a result of 'carbonated by fermentation' (http://purl.obolibrary.org/obo/FOODON_03460246)\r\r
+* formed as a result of 'preservation by filtration' (http://purl.obolibrary.org/obo/FOODON_03470121)\r\r
+"""@en ;
+        rdfs:subClassOf [ a ns1:Restriction ;
+                ns1:onProperty ns4:RO_0002350 ;
+                ns1:someValuesFrom ns4:FOODON_03400195 ],
+            ns4:FOODON_00002017 .
+
+    ns4:FOODON_03302330 a ns1:Class ;
+        rdfs:label "cream (pasteurized)"@en .
+
+    ns4:FOODON_03302458 a ns1:Class ;
+        rdfs:label "cheddar cheese"@en ;
+        ns4:IAO_0000114 ns4:IAO_0000428 ;
+        ns4:IAO_0000412 "http://langual.org" ;
+        ns3:hasDbXref "SUBSET_SIREN:F2458" ;
+        ns3:inSubset "subset_siren" ;
+        rdfs:comment """SIREN DB annotation:\r\r
+* has quality 'solid' (http://purl.obolibrary.org/obo/FOODON_03430151)\r\r
+* derives from 'curd' (http://purl.obolibrary.org/obo/FOODON_03420245)\r\r
+* formed as a result of 'curing or aging process' (http://purl.obolibrary.org/obo/FOODON_03460253)\r\r
+* formed as a result of 'interior bacteria curing process' (http://purl.obolibrary.org/obo/FOODON_03460328)\r\r
+"""@en ;
+        rdfs:subClassOf ns4:FOODON_00001778 .
+
+    ns4:FOODON_03302978 a ns1:Class ;
+        rdfs:label "parmesan cheese (grated)"@en ;
+        ns4:IAO_0000114 ns4:IAO_0000428 ;
+        ns4:IAO_0000412 "http://langual.org" ;
+        ns3:hasDbXref "SUBSET_SIREN:F2978" ;
+        ns3:inSubset "subset_siren" ;
+        rdfs:comment """SIREN DB annotation:\r\r
+* has quality 'divided into pieces, thickness <0.3 cm.' (http://purl.obolibrary.org/obo/FOODON_03430100)\r\r
+* derives from 'curd' (http://purl.obolibrary.org/obo/FOODON_03420245)\r\r
+* formed as a result of 'lactic acid-other agent fermentation process' (http://purl.obolibrary.org/obo/FOODON_03460107)\r\r
+"""@en ;
+        rdfs:subClassOf [ a ns1:Restriction ;
+                ns1:onProperty ns4:RO_0002350 ;
+                ns1:someValuesFrom ns4:FOODON_03400290 ],
+            ns4:FOODON_00001946 ;
+        ns1:equivalentClass [ a ns1:Class ;
+                ns1:intersectionOf [ ] ] .
+
+    ns4:FOODON_03310795 a ns1:Class ;
+        rdfs:label "heavy cream"@en ;
+        ns4:IAO_0000114 ns4:IAO_0000428 ;
+        ns4:IAO_0000412 "http://langual.org" ;
+        ns3:hasDbXref "SUBSET_SIREN:F10795" ;
+        ns3:inSubset "subset_siren" ;
+        rdfs:comment """SIREN DB annotation:\r\r
+* has quality 'liquid, high viscosity, with no visible particles' (http://purl.obolibrary.org/obo/FOODON_03430139)\r\r
+* has quality 'partially heat-treated' (http://purl.obolibrary.org/obo/FOODON_03440018)\r\r
+* derives from 'heavy cream' (http://purl.obolibrary.org/obo/FOODON_03420161)\r\r
+* formed as a result of 'pasteurization by heating' (http://purl.obolibrary.org/obo/FOODON_03470135)\r\r
+"""@en ;
+        rdfs:subClassOf ns4:FOODON_03302330 .
+
+    ns4:FOODON_03311168 a ns1:Class ;
+        rdfs:label "clove ground"@en ;
+        ns4:IAO_0000114 ns4:IAO_0000428 ;
+        ns4:IAO_0000412 "http://langual.org" ;
+        ns3:hasDbXref "SUBSET_SIREN:F11168" ;
+        ns3:inSubset "subset_siren" ;
+        rdfs:comment """SIREN DB annotation:\r\r
+* has quality 'finely ground' (http://purl.obolibrary.org/obo/FOODON_03430106)\r\r
+* has quality 'not heat-treated' (http://purl.obolibrary.org/obo/FOODON_03440003)\r\r
+* derives from 'floret or flower' (http://purl.obolibrary.org/obo/FOODON_03420237)\r\r
+* formed as a result of 'water removal process' (http://purl.obolibrary.org/obo/FOODON_03460138)\r\r
+* formed as a result of 'natural heat drying' (http://purl.obolibrary.org/obo/FOODON_03470141)\r\r
+"""@en ;
+        rdfs:subClassOf ns4:FOODON_00001745 .
+
+    ns4:FOODON_03311532 a ns1:Class ;
+        rdfs:label "potatoes gratiné (dish)"@en ;
+        ns4:IAO_0000114 ns4:IAO_0000122 ;
+        ns4:IAO_0000115 "Potatoes gratiné is one of the most common of gratins. Slices of boiled potato are put in a buttered fireproof dish, sprinkled with cheese and browned in the oven or under the grill (broiler)."@en ;
+        ns4:IAO_0000117 "Damion Dooley"@en ;
+        ns4:IAO_0000119 "https://en.wikipedia.org/wiki/Gratin"^^xsd:anyURI ;
+        ns4:IAO_0000412 "http://langual.org" ;
+        ns5:image "https://upload.wikimedia.org/wikipedia/commons/0/0b/Gratin-Dauphinois.jpg"^^xsd:anyURI ;
+        ns3:hasDbXref "SUBSET_SIREN:F10868",
+            "SUBSET_SIREN:F11532" ;
+        ns3:hasExactSynonym "au gratin potatoes."@en,
+            "gratin potatoes"@en,
+            "potato bake"@en,
+            "potato gratin"@en,
+            "potatoes au gratin"@en,
+            "scalloped potatoes"@en,
+            "Gratin de pommes de terre"@fr,
+            "potato au gratin"@fr,
+            "patates au gratin"@fr-ca ;
+        ns3:inSubset "subset_siren" ;
+        rdfs:comment """SIREN DB annotation:\r\r
+* has quality 'physical state, shape or form, multiple' (http://purl.obolibrary.org/obo/FOODON_03430108)\r\r
+* derives from 'root, tuber or bulb, without peel' (http://purl.obolibrary.org/obo/FOODON_03420240)\r\r
+* formed as a result of 'water removal process' (http://purl.obolibrary.org/obo/FOODON_03460138)\r\r
+* formed as a result of 'curing or aging process' (http://purl.obolibrary.org/obo/FOODON_03460253)\r\r
+* has substance added  http://purl.obolibrary.org/obo/FOODON_03460143\r\r
+* has substance added  http://purl.obolibrary.org/obo/FOODON_03460184\r\r
+"""@en ;
+        rdfs:subClassOf [ a ns1:Restriction ;
+                ns1:onProperty ns4:FOODON_00002420 ;
+                ns1:someValuesFrom ns4:FOODON_03315354 ],
+            ns4:FOODON_03316579 .
+
+    ns4:FOODON_03315354 a ns1:Class ;
+        rdfs:label "potato (whole)"@en .
+
+    ns4:FOODON_03316424 a ns1:Class ;
+        rdfs:label "cod dried"@en ;
+        ns4:IAO_0000114 ns4:IAO_0000428 ;
+        ns4:IAO_0000412 "http://langual.org" ;
+        ns3:hasDbXref "SUBSET_SIREN:F16424" ;
+        ns3:inSubset "subset_siren" ;
+        rdfs:comment """SIREN DB annotation:\r\r
+* has quality 'solid' (http://purl.obolibrary.org/obo/FOODON_03430151)\r\r
+* derives from 'skeletal meat part' (http://purl.obolibrary.org/obo/FOODON_03420175)\r\r
+* formed as a result of 'water removal process' (http://purl.obolibrary.org/obo/FOODON_03460138)\r\r
+* formed as a result of 'preservation by dehydration or drying' (http://purl.obolibrary.org/obo/FOODON_03470116)\r\r
+"""@en ;
+        rdfs:subClassOf [ a ns1:Restriction ;
+                ns1:onProperty ns4:RO_0001000 ;
+                ns1:someValuesFrom ns4:FOODON_03411423 ],
+            [ a ns1:Restriction ;
+                ns1:onProperty ns4:RO_0002350 ;
+                ns1:someValuesFrom ns4:FOODON_03400267 ],
+            [ a ns1:Restriction ;
+                ns1:onProperty ns4:RO_0001000 ;
+                ns1:someValuesFrom ns4:FOODON_03411423 ],
+            ns4:FOODON_00001750 .
+
+    ns4:FOODON_03316579 a ns1:Class ;
+        rdfs:label "vegetable multi-component product"@en .
+
+    ns4:FOODON_03411183 a ns1:Class ;
+        rdfs:label "sheep"@en ;
+        ns4:IAO_0000114 ns4:IAO_0000428 ;
+        ns4:IAO_0000412 "http://langual.org" ;
+        ns5:image "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2c/Flock_of_sheep.jpg/316px-Flock_of_sheep.jpg"^^xsd:anyURI ;
+        ns3:hasDbXref "http://eol.org/pages/39510",
+            "http://www.langual.org/langual_thesaurus.asp?termid=B1183" ;
+        ns3:hasSynonym "mutton (meat)"@en,
+            "ovis spp."@en ;
+        rdfs:subClassOf ns4:FOODON_03411134 ;
+        ns1:equivalentClass [ ],
+            [ ] .
+
+    ns4:FOODON_03411669 a ns1:Class ;
+        rdfs:label "lamb"@en ;
+        ns4:IAO_0000114 ns4:IAO_0000122 ;
+        ns4:IAO_0000115 "In general, a sheep in its first year is called a lamb and its meat is also called lamb."@en ;
+        ns4:IAO_0000119 "https://en.wikipedia.org/wiki/Lamb_and_mutton"^^xsd:anyURI ;
+        ns4:IAO_0000412 "http://langual.org" ;
+        ns3:hasDbXref "http://www.langual.org/langual_thesaurus.asp?termid=B1669" ;
+        rdfs:subClassOf ns4:FOODON_03411183 .
+
+    ns4:FOODON_03420122 a ns1:Class ;
+        rdfs:label "nonmeat part of animal"@en ;
+        ns4:IAO_0000114 ns4:IAO_0000428 ;
+        ns4:IAO_0000115 "Bone, feathers, shell, skin or trim fat."@en ;
+        ns4:IAO_0000412 "http://langual.org" ;
+        ns3:hasDbXref "http://www.langual.org/langual_thesaurus.asp?termid=C0122" ;
+        rdfs:comment "LanguaL curation note: *BLOOD* AND *INK, AQUATIC ANIMAL* are now listed under organism substance."@en ;
+        rdfs:subClassOf ns4:FOODON_03420127 .
+
+    ns4:RO_0009001 a ns1:IrreflexiveProperty,
+            ns1:ObjectProperty ;
+        ns4:IAO_0000117 "Damion Dooley" .
+
+    ns4:UBERON_0000463 a ns1:Class ;
+        rdfs:label "organism substance"@en ;
+        ns4:IAO_0000115 "Material anatomical entity in a gaseous, liquid, semisolid or solid state; produced by anatomical structures or derived from inhaled and ingested substances that have been modified by anatomical structures as they pass through the body."@en ;
+        ns4:IAO_0000117 "Damion Dooley"@en ;
+        rdfs:subClassOf [ a ns1:Restriction ;
+                ns1:onProperty ns4:RO_0003001 ;
+                ns1:someValuesFrom ns4:OBI_0100026 ],
+            ns4:FOODON_03420122 .
+
+    ns4:UBERON_0001911 rdfs:subClassOf ns4:FOODON_03420127 .
+
+    ns4:UBERON_0001913 a ns1:Class ;
+        rdfs:label "milk"^^xsd:string ;
+        ns4:GENEPIO_0000006 "mammalian milk"@en ;
+        ns4:IAO_0000115 "An emulsion of fat globules within a fluid that is secreted by the mammary gland during lactation."^^xsd:string ;
+        ns4:IAO_0000116 "to axiomatize the different forms of mammary gland secretion an ontology of the phases of pregnancy/lactation is required. Using the existing GO def of lactation is circular."^^xsd:string ;
+        ns4:IAO_0000412 "http://langual.org" ;
+        ns4:UBPROP_0000003 "The detailed similarities of mammary glands in living monotremes, marsupials, and eutherians argue for a monophyletic origin of these glands, perhaps by the combination of parts of preexisting sebaceous and sweat glands.[well established][VHOG]"^^xsd:string ;
+        ns4:UBPROP_0000012 "ncit:Milk refers specifically to cow milk"^^xsd:string ;
+        ns3:hasDbXref <http://en.wikipedia.org/wiki/Breast_milk>,
+            <http://linkedlifedata.com/resource/umls/id/C1511310>,
+            "BTO:0000868"^^xsd:string,
+            "CALOHA:TS-0636"^^xsd:string,
+            "EMAPA:36540"^^xsd:string,
+            "ENVO:02000031"^^xsd:string,
+            "EV:0100126"^^xsd:string,
+            "FMA:62100"^^xsd:string,
+            "GAID:1230"^^xsd:string,
+            "MA:0002552"^^xsd:string,
+            "MAT:0000056"^^xsd:string,
+            "MESH:A13.622"^^xsd:string,
+            "MIAA:0000056"^^xsd:string,
+            "NCIT:C13401"^^xsd:string,
+            "OpenCyc:Mx4rvVjGZJwpEbGdrcN5Y29ycA"^^xsd:string,
+            "UMLS:C1511310"^^xsd:string,
+            "VHOG:0001263"^^xsd:string,
+            "galen:Milk"^^xsd:string,
+            "http://www.langual.org/langual_thesaurus.asp?termid=C0235" ;
+        ns3:hasExactSynonym "mammary gland milk"^^xsd:string,
+            "mammal milk"@en,
+            "milk"@en ;
+        ns3:hasOBONamespace "uberon"^^xsd:string ;
+        ns3:id "UBERON:0001913"^^xsd:string ;
+        ns3:inSubset <http://purl.obolibrary.org/obo/uberon/core#pheno_slim>,
+            <http://purl.obolibrary.org/obo/uberon/core#uberon_slim> ;
+        rdfs:comment "LanguaL curation note: See scope note for *MILK OR MILK COMPONENT*. for lowfat milk use *FAT PARTIALLY REMOVED*; for skim milk, use *FAT FULLY REMOVED* (both found in D3. TREATMENT APPLIED)."@en,
+            "LanguaL term definition: Milk is a secretion from the mammary glands of female mammals."@en ;
+        rdfs:subClassOf [ a ns1:Restriction ;
+                ns1:onProperty ns4:RO_0003001 ;
+                ns1:someValuesFrom ns4:UBERON_0001911 ],
+            ns4:UBERON_0006314,
+            ns4:UBERON_0006539 .
+
+    ns4:UBERON_0006314 a ns1:Class ;
+        rdfs:label "bodily fluid"^^xsd:string ;
+        ns3:hasBroadSynonym "fluid"@en ;
+        rdfs:subClassOf ns4:UBERON_0000463 .
+
+    ns4:UBERON_0006539 a ns1:Class ;
+        rdfs:label "mammary gland fluid/secretion"^^xsd:string .
+
+    <http://purl.obolibrary.org/obo/uberon/core#pheno_slim> a ns1:AnnotationProperty .
+
+    <http://purl.obolibrary.org/obo/uberon/core#uberon_slim> a ns1:AnnotationProperty .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/carrot> a ns2:ingredientname ;
+        rdfs:label "carrots" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#11124> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03301378 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#11124>,
+            ns4:FOODON_03301378 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/peanut%20butter> a ns2:ingredientname ;
+        rdfs:label "peanut butter" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#16167> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03306867 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#16167>,
+            ns4:FOODON_03306867 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/onion> a ns2:ingredientname ;
+        rdfs:label "onion" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#02026> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03301845 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#02026>,
+            ns4:FOODON_03301845 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/salt%20and%20pepper> a ns2:ingredientname ;
+        rdfs:label "salt and pepper" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#11816> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03305070 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#11816>,
+            ns4:FOODON_03305070 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/water> a ns2:ingredientname ;
+        rdfs:label "water" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#11503> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03301328 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#11503>,
+            ns4:FOODON_03301328 .
+
+    ns4:FOODON_03310351 a ns1:Class ;
+        rdfs:label "butter"@en ;
+        ns4:IAO_0000114 ns4:IAO_0000428 ;
+        ns4:IAO_0000412 "http://langual.org" ;
+        ns3:hasDbXref "SUBSET_SIREN:F10351" ;
+        ns3:inSubset "subset_siren" ;
+        rdfs:comment """SIREN DB annotation:\r\r
+* has quality 'semisolid with smooth consistency' (http://purl.obolibrary.org/obo/FOODON_03430119)\r\r
+* has quality 'partially heat-treated' (http://purl.obolibrary.org/obo/FOODON_03440018)\r\r
+* derives from 'butter' (http://purl.obolibrary.org/obo/FOODON_00001023)\r\r
+* formed as a result of 'pasteurization by heating' (http://purl.obolibrary.org/obo/FOODON_03470135)\r\r
+"""@en ;
+        rdfs:seeAlso <https://www.uoguelph.ca/foodscience/book/export/html/1687> ;
+        rdfs:subClassOf ns4:FOODON_00001772 .
+
+    ns4:FOODON_03420127 a ns1:Class ;
+        rdfs:label "animal body or body part"@en ;
+        ns4:IAO_0000114 ns4:IAO_0000428 ;
+        ns4:IAO_0000115 "Includes carcass meat, organ meat, and nonmeat parts of animals, as well as the whole animal."@en ;
+        ns4:IAO_0000412 "http://langual.org" ;
+        ns3:hasDbXref "http://www.langual.org/langual_thesaurus.asp?termid=C0127" ;
+        rdfs:comment "LanguaL curation note: Includes carcass meat, organ meat, and nonmeat parts of animals, as well as the whole animal."@en ;
+        rdfs:subClassOf ns4:FOODON_03420164 .
+
+    ns4:IAO_0000122 a ns1:NamedIndividual ;
+        rdfs:label "ready for release"@en .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/butter> a ns2:ingredientname ;
+        rdfs:label "butter" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#01001> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03310351 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#01001>,
+            ns4:FOODON_03310351 .
+
+    <http://idea.rpi.edu/heals/kb/ingredientname/potato> a ns2:ingredientname ;
+        rdfs:label "potatoes" ;
+        ns2:equivalentUsdaFood <http://idea.rpi.edu/heals/kb/usda#11370> ;
+        ns2:equivalentFoodOnClass ns4:FOODON_03311532 ;
+        ns1:equivalentClass <http://idea.rpi.edu/heals/kb/usda#11370>,
+            ns4:FOODON_03311532 .
+
+    ns4:IAO_0000428 a ns1:NamedIndividual ;
+        rdfs:label "requires discussion"@en .

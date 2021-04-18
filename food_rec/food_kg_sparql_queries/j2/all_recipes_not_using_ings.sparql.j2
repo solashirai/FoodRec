@@ -1,0 +1,13 @@
+{
+    SELECT ?recipeUri WHERE {
+        ?recipeUri a recipe-kb:recipe .
+        FILTER NOT EXISTS {
+            {% block values %}
+                {% include 'value_constraint.sparql.j2' %}
+            {% endblock %}
+            ?recipeUri recipe-kb:uses ?ingUseUri .
+            ?ingUseUri recipe-kb:ing_name ?prohibIngUri .
+        }
+    } LIMIT 100
+}
+{% include 'recipe.sparql.j2' %}

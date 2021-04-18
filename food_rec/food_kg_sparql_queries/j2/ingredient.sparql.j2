@@ -1,0 +1,8 @@
+{{ingUri}} rdfs:label ?ingLabel ;
+OPTIONAL {
+    {{ingUri}} recipe-kb:equivalentUsdaFood ?usdaUri .
+    {% include 'usda_nutrition.sparql.j2' %}
+}
+OPTIONAL {
+    {{ingUri}} recipe-kb:equivalentFoodOnClass ?foodOnUri .
+}

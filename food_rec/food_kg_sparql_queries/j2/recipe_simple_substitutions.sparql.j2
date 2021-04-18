@@ -1,0 +1,13 @@
+{
+    {% include 'value_constraint.sparql.j2' %}
+    {% include 'recipe.sparql.j2' %}
+} UNION
+{
+    {% include 'value_constraint.sparql.j2' %}
+    ?recipeUri recipe-kb:uses ?ingUseUri .
+    ?ingUseUri recipe-kb:ing_name ?fromIngUri .
+    ?fromIngUri food-kg-sub:hasSubstitute ?toIngUri .
+    {% with ingUri="?toIngUri" %}
+        {% include 'ingredient.sparql.j2' %}
+    {% endwith %}
+}

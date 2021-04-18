@@ -1,0 +1,10 @@
+{% extends 'construct_query.sparql.j2' %}
+{% block construct_triples %}
+    {% include 'constructor_simple_substitutions.sparql.j2' %}
+{% endblock %}
+{% block values %}
+    {% include 'value_constraint.sparql.j2' %}
+{% endblock %}
+{% block expressions %}
+    {% include 'simple_substitutions.sparql.j2' %}
+{% endblock %}

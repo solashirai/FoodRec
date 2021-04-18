@@ -1,0 +1,10 @@
+?userUri ?userP ?userO .
+OPTIONAL {
+    ?userUri food-kg-user:user_dietary_restriction ?userDietaryRestriction .
+    OPTIONAL {
+        ?userDietaryRestriction diet-restriction:restricted_foodon_class ?userProhibitedFoodOn.
+    }
+    OPTIONAL {
+        ?userDietaryRestriction diet-restriction:nutrition_constraint ?nutritionalConstraint.
+    }
+}

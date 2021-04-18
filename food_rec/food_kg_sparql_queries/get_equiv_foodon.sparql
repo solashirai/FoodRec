@@ -1,0 +1,6 @@
+prefix owl:  <http://www.w3.org/2002/07/owl#>
+SELECT ?foodon_uri
+WHERE {{
+    {ing_uri} owl:equivalentClass ?foodon_uri.
+    filter (strstarts(str(?foodon_uri), "http://purl.obolibrary.org/obo/")).
+}}

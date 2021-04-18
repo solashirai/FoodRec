@@ -1,0 +1,64 @@
+@prefix recipe-kb: <http://idea.rpi.edu/heals/kb/> .
+@prefix food-kg-sub: <http://idea.rpi.edu/heals/ingredient_substitution/> .
+@prefix ing: <http://idea.rpi.edu/heals/kb/ingredientname/> .
+
+ing:potato food-kg-sub:hasSubstitute ing:cauliflower ,
+    ing:turnip ,
+    ing:butternut%20squash ,
+    ing:carrot .
+
+ing:cauliflower food-kg-sub:hasSubstitute ing:potato ,
+    ing:turnip ,
+    ing:butternut%20squash ,
+    ing:carrot .
+
+ing:turnip food-kg-sub:hasSubstitute ing:potato ,
+    ing:cauliflower ,
+    ing:butternut%20squash ,
+    ing:carrot .
+
+ing:butternut%20squash food-kg-sub:hasSubstitute ing:potato ,
+    ing:cauliflower ,
+    ing:turnip ,
+    ing:carrot.
+
+ing:carrot food-kg-sub:hasSubstitute ing:potato ,
+    ing:cauliflower ,
+    ing:turnip ,
+    ing:butternut%20squash .
+
+ing:butter food-kg-sub:hasSubstitute ing:unsweetened%20applesauce ,
+    ing:olive%20oil ,
+    ing:prune%20puree ,
+    ing:unsalted%20butter ,
+    ing:shortening .
+
+ing:unsweetened%20applesauce food-kg-sub:hasSubstitute ing:butter ,
+    ing:olive%20oil ,
+    ing:prune%20puree ,
+    ing:unsalted%20butter ,
+    ing:shortening .
+
+ing:olive%20oil food-kg-sub:hasSubstitute ing:butter ,
+    ing:unsweetened%20applesauce ,
+    ing:prune%20puree ,
+    ing:unsalted%20butter ,
+    ing:shortening .
+
+ing:prune%20puree food-kg-sub:hasSubstitute ing:butter ,
+    ing:unsweetened%20applesauce ,
+    ing:olive%20oil ,
+    ing:unsalted%20butter ,
+    ing:shortening .
+
+ing:unsalted%20butter food-kg-sub:hasSubstitute ing:butter ,
+    ing:unsweetened%20applesauce ,
+    ing:olive%20oil ,
+    ing:prune%20puree ,
+    ing:shortening .
+
+ing:shortening food-kg-sub:hasSubstitute ing:butter ,
+    ing:unsweetened%20applesauce ,
+    ing:olive%20oil ,
+    ing:prune%20puree ,
+    ing:unsalted%20butter .

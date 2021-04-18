@@ -1,0 +1,7 @@
+prefix owl:  <http://www.w3.org/2002/07/owl#>
+prefix usda-ontology: <http://idea.rpi.edu/heals/kb/usda-ontology#>
+SELECT ?usda_uri
+WHERE {{
+    {ing_uri} owl:equivalentClass ?usda_uri.
+    ?usda_uri a usda-ontology:Food.
+}}

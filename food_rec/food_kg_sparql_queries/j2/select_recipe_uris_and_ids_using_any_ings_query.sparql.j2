@@ -1,0 +1,10 @@
+{% extends 'select_query.sparql.j2' %}
+
+{% block select %}SELECT ?recipeUri ?recipeId{% endblock%}
+
+{% block expressions %}
+{% include 'value_constraint.sparql.j2' %}
+?ingUse recipe-kb:ing_name ?ingUri .
+?recipeUri recipe-kb:uses ?ingUse ;
+    recipe-kb:recipe1MId ?recipeId .
+{% endblock %}

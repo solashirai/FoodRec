@@ -1,0 +1,5 @@
+prefix recipe-kb: <http://idea.rpi.edu/heals/kb/>
+SELECT ?recipeIng
+WHERE {{
+    {recipe_uri} recipe-kb:uses ?recipeIng.
+}}

@@ -1,0 +1,10 @@
+prefix recipe-kb: <http://idea.rpi.edu/heals/kb/>
+SELECT ?cooc_ing (COUNT(distinct ?recipe) as ?cooc_count)
+WHERE {{
+    ?ing_A recipe-kb:ing_name {target_ing_uri}.
+    ?recipe recipe-kb:uses ?ing_A;
+        recipe-kb:uses ?ing_B.
+    ?ing_B recipe-kb:ing_name ?cooc_ing.
+}}
+GROUP BY ?cooc_ing
+HAVING (COUNT(distinct ?recipe) > 0)

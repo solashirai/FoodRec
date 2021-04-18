@@ -1,0 +1,12 @@
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix obo: <http://purl.obolibrary.org/obo/>
+prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT DISTINCT ?patha ?pathb
+WHERE {{
+    {target_foodon_uri} (owl:equivalentClass* | rdfs:subClassOf* | owl:unionOf* | owl:intersectionOf* | owl:someValuesFrom* | obo:RO_0002350* | obo:RO_0001000* | obo:RO_0002225* | obo:FOODON_00002420* | rdf:first* | rdf:rest*)* ?patha.
+    {target_foodon_uri} (owl:equivalentClass* | rdfs:subClassOf* | owl:unionOf* | owl:intersectionOf* | owl:someValuesFrom* | obo:RO_0002350* | obo:RO_0001000* | obo:RO_0002225* | obo:FOODON_00002420* | rdf:first* | rdf:rest*)* ?pathb.
+    # ?pathb (owl:equivalentClass* | rdfs:subClassOf* | owl:unionOf* | owl:intersectionOf* | owl:someValuesFrom* | obo:RO_0002350* | obo:RO_0001000* | obo:RO_0002225* | obo:FOODON_00002420* | rdf:first* | rdf:rest*)* obo:FOODON_00002403 . # path up to food material
+    ?patha (owl:equivalentClass | rdfs:subClassOf | owl:unionOf | owl:intersectionOf | owl:someValuesFrom | obo:RO_0002350 | obo:RO_0001000 | obo:RO_0002225 | obo:FOODON_00002420 | rdf:first | rdf:rest) ?pathb.
+
+}}

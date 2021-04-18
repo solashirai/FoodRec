@@ -1,0 +1,9 @@
+git+git://github.com/solashirai/FREx.git@master#egg=frex
+dataclasses-json==0.5.2
+rdflib==4.2.2
+numpy==1.19.1
+pytest==5.3.5
+flask==1.1.2
+SPARQLWrapper==1.8.5
+Jinja2==2.11.2
+stringcase==1.2.0

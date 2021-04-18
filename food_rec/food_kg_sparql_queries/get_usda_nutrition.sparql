@@ -1,0 +1,10 @@
+prefix dbr: <http://dbpedia.org/resource/>
+prefix sio: <http://semanticscience.org/resource/>
+prefix usda-kb: <http://idea.rpi.edu/heals/kb/usda#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?label ?val
+WHERE {{
+    {target_usda_uri} ?p ?val.
+    ?p a sio:Attribute;
+     rdfs:label ?label .
+}}

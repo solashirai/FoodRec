@@ -1,0 +1,10 @@
+{% extends 'select_query.sparql.j2' %}
+
+{% block select %}SELECT ?recipeUri ?recipeSod{% endblock%}
+{% block values %}
+    {% include 'value_constraint.sparql.j2' %}
+{% endblock %}
+
+{% block expressions %}
+?recipeUri recipe-kb:totalSodium ?recipeSod .
+{% endblock %}

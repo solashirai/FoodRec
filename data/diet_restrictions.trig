@@ -1,0 +1,70 @@
+@prefix recipe: <http://idea.rpi.edu/heals/kb/recipe/> .
+@prefix obo: <http://purl.obolibrary.org/obo/> .
+@prefix recipe-kb: <http://idea.rpi.edu/heals/kb/> .
+@prefix ing: <http://idea.rpi.edu/heals/kb/ingredientname/> .
+@prefix diet-restriction: <http://idea.rpi.edu/heals/diet_restriction/> .
+@prefix heals: <http://idea.rpi.edu/heals/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+diet-restriction:kosher a heals:diet_restriction; # needs improvement
+    rdfs:label "kosher diet";
+    diet-restriction:restricted_foodon_class obo:FOODON_00001293, # shellfish food product
+        obo:FOODON_00001132, # swine food product
+        obo:FOODON_00002183, # rabbit meat food product
+        obo:FOODON_00002200, # amphibian or reptile food product
+        obo:FOODON_03411897. # sturgeon family
+
+diet-restriction:vegan a heals:diet_restriction;
+    rdfs:label "vegan diet";
+    diet-restriction:restricted_foodon_class obo:FOODON_00001046, # seafood
+        obo:FOODON_00001176, # invertebrate
+        obo:FOODON_00001092. # vertebrates
+
+diet-restriction:vegetarian a heals:diet_restriction;
+    rdfs:label "vegetarian diet";
+    diet-restriction:restricted_foodon_class obo:FOODON_00001046, # seafood
+        obo:FOODON_00001176, # invertebrate
+        obo:FOODON_00001006, # meat food product
+        obo:FOODON_03411134, # mammal
+        obo:FOODON_00002477, # game animal
+        obo:FOODON_00001248, # fish food product
+        obo:FOODON_00001251, # avian food product
+        obo:FOODON_03302001, # animal-derived food product
+        obo:FOODON_00002671, # animal tissue
+        obo:FOODON_00001608, # animal soup food product
+        obo:FOODON_00001602, # animal product based flavoring or seasoning
+        obo:FOODON_00001596, # animal based salad
+        obo:FOODON_00001595, # animal based refined or partially-refined food product
+        obo:FOODON_00002200, # amphibian or reptile food product
+        obo:FOODON_03411624. # amphibian
+
+diet-restriction:pescatarian a heals:diet_restriction;
+    rdfs:label "pescatarian diet";
+    diet-restriction:restricted_foodon_class  obo:FOODON_00001176, # invertebrate
+        obo:FOODON_00001006, # meat food product
+        obo:FOODON_03411134, # mammal
+        obo:FOODON_00002477, # game animal
+        obo:FOODON_00001251, # avian food product
+        obo:FOODON_03302001, # animal-derived food product
+        obo:FOODON_00002671, # animal tissue
+        obo:FOODON_00001608, # animal soup food product
+        obo:FOODON_00001602, # animal product based flavoring or seasoning
+        obo:FOODON_00001596, # animal based salad
+        obo:FOODON_00001595, # animal based refined or partially-refined food product
+        obo:FOODON_00002200, # amphibian or reptile food product
+        obo:FOODON_03411624. # amphibian
+
+diet-restriction:egg_allergy a heals:diet_restriction;
+    rdfs:label "egg allergy";
+    diet-restriction:restricted_foodon_class obo:FOODON_00001274. # egg food product
+
+diet-restriction:dairy_allergy a heals:diet_restriction;
+    rdfs:label "dairy allergy";
+    diet-restriction:restricted_foodon_class obo:FOODON_00001256. # dairy food product
+
+diet-restriction:peanut_allergy a heals:diet_restriction;
+    rdfs:label "peanut allergy";
+    diet-restriction:restricted_foodon_class obo:FOODON_00002099. # peanut food product
+
+diet-restriction:reduce_carbs a heals:diet_restriction; # current placeholder for reducing carbs or something
+    diet-restriction:nutrition_constraint "reduce carbs".

@@ -1,0 +1,10 @@
+{% extends 'select_query.sparql.j2' %}
+{% block select %}
+SELECT ?ingUri
+{% endblock %}
+{% block values %}
+    {% include 'value_constraint.sparql.j2' %}
+{% endblock %}
+{% block expressions %}
+    {% include 'ingredient_uri_related_to_foodon_class.sparql.j2' %}
+{% endblock %}

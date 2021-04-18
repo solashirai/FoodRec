@@ -1,0 +1,14 @@
+{% extends 'select_query.sparql.j2' %}
+
+{% block select %}SELECT DISTINCT ?recipeUri ?recipeId{% endblock%}
+
+{% block expressions %}
+?recipeUri recipe-kb:recipe1MId ?recipeId .
+FILTER NOT EXISTS {
+    {% include 'value_constraint.sparql.j2' %}
+    MINUS {
+        ?recipeUri recipe-kb:uses ?ingUse .
+        ?ingUse recipe-kb:ing_name ?ingUri .
+    }
+}
+{% endblock %}

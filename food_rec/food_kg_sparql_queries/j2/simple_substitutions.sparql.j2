@@ -1,0 +1,13 @@
+{
+    {% with ingUri="?fromIngUri" %}
+        {% include 'ingredient.sparql.j2' %}
+    {% endwith %}
+    BIND (?fromIngUri as ?ingUri)
+}
+UNION {
+    ?fromIngUri food-kg-sub:hasSubstitute ?toIngUri .
+    {% with ingUri="?toIngUri" %}
+        {% include 'ingredient.sparql.j2' %}
+    {% endwith %}
+    BIND (?toIngUri as ?ingUri)
+}

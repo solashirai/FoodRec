@@ -1,0 +1,7 @@
+prefix recipe-kb: <http://idea.rpi.edu/heals/kb/>
+prefix food-kg-sub: <http://idea.rpi.edu/heals/ingredient_substitution/>
+SELECT ?sub_ingredient
+WHERE {{
+    {ing_uri} food-kg-sub:hasSubstitute ?sub_ingredient.
+    FILTER ({ing_uri} != ?sub_ingredient)
+}}

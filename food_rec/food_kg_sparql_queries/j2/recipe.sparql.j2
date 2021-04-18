@@ -1,0 +1,6 @@
+?recipeUri recipe-kb:uses ?ingUseUri ;
+    rdfs:label ?recipeLabel .
+OPTIONAL {
+    ?recipeUri recipe-kb:recipe1MId ?recipeId .
+}
+{% include 'ingredient_use.sparql.j2' %}
