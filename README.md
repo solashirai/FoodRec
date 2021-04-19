@@ -1,6 +1,6 @@
 # FoodRec
 
-This is a repo containing the implementation of a simple food recommendation application, using [FREx](https://github.com/solashirai/FREx). FoodRec primarily serves as a prototype that demonstrates how to develop recommender systems using the FREx package, so some of the steps used to choose recommendations are quite simple and not necessarily suitable for a "real" application.
+This is a repo containing the implementation of a simple food recommendation application, using [FREx](https://github.com/solashirai/FREx). FoodRec primarily serves as a prototype that demonstrates how to develop recommender systems using the FREx package, so some of the steps used to choose recommendations are quite simple and not necessarily suitable for a "real" application. More information about FREx can be found [here](https://tetherless-world.github.io/FREx/).
 
 The core data used in this application comes from [FoodKG](https://foodkg.github.io/), with additional processing to do things like compute the nutritional information for ingredients/recipes. A small dataset of only 5 recipes is included for tests. A slightly larger dataset, of 5,000 recipes, is also included.
 
